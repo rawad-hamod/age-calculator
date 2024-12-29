@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  hsl(0, 0%, 94%);
+
+}
+.container{
+    width:95vw;
+    height: 75vh;
+    background-color:  hsl(0, 0%, 100%);
+    padding: 50px 10px 50px 10px;
+    border-radius: 10px 10px 50px 10px;
+    margin: 10vh auto 20vh auto;
+}
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.d-flex-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.input-unit{
+    width:30%;
+    margin-bottom: 20px;
+    
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input{
+    height:45px;
+    width:100%;
+    outline: none;
+    border:1px solid Light hsl(0, 0%, 86%);
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 5px;
+}
+[class$="-error"] {
+color:hsl(0, 100%, 67%);
+min-height: 18px;
+}
+label{
+    display: block;
+   color: hsl(0, 0%, 86%)
+    
+}
+button{
+    display: block;
+    position: relative;
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 0 auto -28px auto; 
+    z-index: 100; 
+}
+button:hover{
+    scale: 1.01;
+    
+}
+hr{
+    color: hsl(0, 0%, 86%);
+    margin-top: -28px;
+    height:1px;
+    z-index: -1;
+}
+.results{
+margin-top: 50px;
+padding:10px;
+font-size: 48px;
+font-weight: bold;
+}
+.results span{
+color:hsl(259, 100%, 65%)
+}
+@media (min-width:600px){
+    .container{
+        width:60vw;
+        height: 90vh;
+        padding: 20px 10px 30px 10px;
+        border-radius: 10px 10px 150px 10px;
+        margin: 5vh auto 5vh auto;
+    } 
+    .d-flex-row{
+        justify-content: start;
+        gap:10px;
+    }
+    .input-unit{
+        width:20%;
+    }
+    button{
+        height:100px;
+        width: 100px;
+        margin: 0 0 -50px auto; 
+         
+    }
+    .results{
+        font-size: 64px;
+        }
+        input{
+            height:55px;
+            font-size: 32px;
+            
+        }
+}
