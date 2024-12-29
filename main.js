@@ -1,3 +1,4 @@
+let monthsDays=[31,29,31,30,31,30,31,31,30,31,30,31];
 // input dates
 let dayInput = document.getElementById("day");
 let monthInput = document.getElementById("month");
@@ -24,9 +25,13 @@ let yearError = document.getElementById("year-error");
 let yearOutput = document.getElementById("year-result");
 let monthOutput = document.getElementById("month-result");
 let daysOutput = document.getElementById("day-result");
+
+
+
 // check date input value
 dayInput.addEventListener("input", (e) => {
-  if (dayInput.value > 31 || dayInput.value <= 0) {
+  let validMonthDate =monthsDays[monthInput.value-1]
+  if (dayInput.value > validMonthDate || dayInput.value <= 0) {
     dayError.textContent = "Must be a valid day";
     dayInput.style.border="1px solid hsl(0, 100%, 67%)";
    dayLabel.style.color="hsl(0, 100%, 67%)";

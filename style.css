@@ -57,6 +57,7 @@ input{
 [class$="-error"] {
 color:hsl(0, 100%, 67%);
 min-height: 18px;
+font
 }
 label{
     display: block;
